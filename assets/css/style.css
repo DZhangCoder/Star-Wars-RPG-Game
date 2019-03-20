@@ -1,0 +1,72 @@
+.headerPic{
+    width: 100%; 
+}
+
+body{
+    background-color: black; 
+    color: white; 
+    margin-left: 1%; 
+    margin-bottom: 10%; 
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.character{
+    height: 100px; 
+    width: 150px; 
+    background-color: white;  
+    margin-left: 10px; 
+    font-size: 0.8em; 
+}
+
+[type = "button"]{
+    color: red; 
+    font-weight: bold; 
+    padding: 5px; 
+    border-radius: 10%; 
+}
+
+.char_container{
+    border: 3px solid yellowgreen; 
+    height: 130px; 
+    width: 170px; 
+    padding: 1%; 
+    margin-top: 1%; 
+    margin-right: 1%; 
+    margin-bottom: 1%; 
+    display: inline-block; 
+    background-color: white; 
+}
+
+.char_name{
+    text-align: center; 
+    color: black; 
+    padding-bottom: 3px; 
+}
+
+.hp{
+    text-align: center; 
+    color: black; 
+    padding-top: 3px; 
+}
+
+.main{
+    margin-top:1%; 
+    margin-right:1%; 
+}
+
+#userChoice{
+    height: 180px; 
+}
+
+#enemy{
+    height: 180px; 
+}
+
+#defender{
+    height: 180px; 
+}
+
+.word_css{
+    line-height: 1.5em; 
+    font-size: 1.5em; 
+}

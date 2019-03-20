@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Star Wars RPG Game</title>
+
+    <!-- link to style.css and reset.css files -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <!-- link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+</head>
+
+<body>
+    <!-- header photo -->
+    <img src="assets/images/header.jpg" alt="star wars header" class="headerPic">
+
+    <!-- character photos -->
+    <div class="all_char">
+        <div class="char_container">
+            <div class="char_name">Darth Vader</div>
+            <img src="assets/images/darth vader.jpg" alt="darth vader" class="character">
+            <div class="hp hp1">HP</div>
+        </div>
+
+        <div class="char_container">
+            <div class="char_name">Luke Skywalker</div>
+            <img src="assets/images/luke skywalker.jpg" alt="luke skywalker" class="character">
+            <div class="hp hp2">HP</div>
+        </div>
+
+        <div class="char_container">
+            <div class="char_name">Darth Sidious</div>
+            <img src="assets/images/darth sidious.jpg" alt="darth sidious" class="character">
+            <div class="hp hp3">HP</div>
+        </div>
+
+        <div class="char_container">
+            <div class="char_name">Darth Maul</div>
+            <img src="assets/images/darth maul.jpg" alt="darth maul" class="character">
+            <div class="hp hp4">HP</div>
+        </div>
+    </div>
+
+
+    <!-- your character -->
+    <div class="main">
+        <div class="word_css">Your Character</div>
+        <div id="userChoice"></div>
+
+        <!-- enemies -->
+        <div class="word_css">Enemies Available To Attack</div>
+        <div id="enemy"></div>
+
+        <!-- attack section -->
+        <div class="word_css">Fight Section</div>
+        <button type="button" class="attack">Attack</button>
+        <br />
+        <br />
+
+        <!-- defender -->
+        <div class="word_css">Defender</div>
+        <div id="defender"></div>
+        <div id = "explain_para"></div>
+        <button type="button" class="reset">Restart</button>
+    </div>
+
+    <!-- link to js and jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
+</body>
+
+</html>
