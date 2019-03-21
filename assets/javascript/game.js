@@ -9,6 +9,10 @@ var darthvader = {
         this.attackPower = Math.min(this.attackPower, 180)
         this.healthPoints -= enemy_ap;
     },
+    beingAttacked: function (enemy_ap){
+        this.attackPower = 8; 
+        this.healthPoints -= enemy_ap;
+    },
     reset: function () {
         attackPower = 8;
         healthPoints = 120;
@@ -22,6 +26,10 @@ var lukeskywalker = {
     healthPoints: 100,
     attack: function (enemy_ap) {
         this.healthPoints -= enemy_ap;
+        this.attackPower += this.attackPower; 
+    },
+    beingAttacked: function (enemy_ap){
+        this.healthPoints -= enemy_ap;
     },
     reset: function () {
         healthPoints = 100;
@@ -33,6 +41,10 @@ var darthsidious = {
     attackPower: 10,
     healthPoints: 120,
     attack: function (enemy_ap) {
+        this.attackPower += this.attackPower; 
+        this.healthPoints -= enemy_ap;
+    },
+    beingAttacked: function (enemy_ap){
         this.healthPoints -= enemy_ap;
     },
     reset: function () {
@@ -95,7 +107,7 @@ $(document).ready(function () {
     resetGame();
     // reset the game when clicking the reset button 
     $(".reset").on("click", function () {
-        resetGame();
+        location.reload(); 
     });
     //onclick event -- character choice 
     $(".all_char .char_container").on("click", function () {
