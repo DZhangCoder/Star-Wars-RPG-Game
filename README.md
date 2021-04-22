@@ -20,4 +20,4 @@ Star Wars RPG Game is a role-playing game. Players will choose a character as th
 - jQuery
 
 ### Link to the project
-https://dzhangcoder.github.io/Star-Wars-RPG-Game/
+https://dongdongzh.github.io/Star-Wars-RPG-Game/
